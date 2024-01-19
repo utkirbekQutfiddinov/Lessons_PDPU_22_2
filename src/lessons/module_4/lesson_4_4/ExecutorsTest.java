@@ -24,7 +24,7 @@ public class ExecutorsTest {
         ExecutorService service = Executors.newFixedThreadPool(4);
 //            ExecutorService service = Executors.newSingleThreadExecutor();
 //        ExecutorService service=Executors.newCachedThreadPool();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 1_000_000; i++) {
 //            service.execute(run);
 
 
