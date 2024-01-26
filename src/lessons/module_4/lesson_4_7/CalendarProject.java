@@ -2,7 +2,6 @@ package lessons.module_4.lesson_4_7;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.Month;
 import java.util.Scanner;
 
 public class CalendarProject {
@@ -23,9 +22,9 @@ public class CalendarProject {
 //        int inDay = sc.nextInt();
 
 //        LocalDate date = LocalDate.of(inYear, inMonth, inDay);
-//        LocalDate date = LocalDate.now();
+        LocalDate date = LocalDate.now();
 
-        LocalDate date = LocalDate.of(2004, 7, 3);
+//        LocalDate date = LocalDate.of(2004, 7, 3);
 
         DayOfWeek dayOfWeek = date.getDayOfWeek();
 

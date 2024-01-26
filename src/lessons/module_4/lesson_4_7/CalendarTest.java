@@ -1,8 +1,6 @@
 package lessons.module_4.lesson_4_7;
 
 import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
 
 public class CalendarTest {
     public static void main(String[] args) {
