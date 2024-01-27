@@ -52,14 +52,22 @@ public class CalendarProject {
         LocalDate prevDate = date.minusMonths(1);
 
         for (int i = prevDate.lengthOfMonth() - firstDayOfThisMonth + 2; i <= prevDate.lengthOfMonth(); i++) {
-            System.out.print(RED + i + " " + RESET);
+            System.out.print(YELLOW + i + " " + RESET);
         }
 
 
         int daysCount = date.lengthOfMonth();
 
         for (int i = 1; i <= daysCount; i++) {
-            System.out.print(GREEN + (i > 9 ? (i) : (" " + i)) + " " + RESET);
+
+            if(i==date.getDayOfMonth()){
+                //today
+                System.out.print(RED + (i > 9 ? (i) : (" " + i)) + " " + RESET);
+            }else {
+                //other days
+                System.out.print(GREEN + (i > 9 ? (i) : (" " + i)) + " " + RESET);
+            }
+
             if ((i + firstDayOfThisMonth - 1) % 7 == 0) {
                 System.out.println();
             }
@@ -71,7 +79,7 @@ public class CalendarProject {
         DayOfWeek nextMonthFirstDayOfWeek = nextMonthFirstDay.getDayOfWeek();
 
         for (int i = 1; i <= 7 - nextMonthFirstDayOfWeek.getValue() + 1; i++) {
-            System.out.print(RED + " " + i + " " + RESET);
+            System.out.print(YELLOW + " " + i + " " + RESET);
         }
 
 
