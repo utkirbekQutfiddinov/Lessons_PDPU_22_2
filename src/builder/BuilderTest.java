@@ -2,7 +2,7 @@ package builder;
 
 public class BuilderTest {
     public static void main(String[] args) {
-        Book b=new Book().builder()
+        builder.Book b=new builder.Book().builder()
                 .setId(12)
 //                .setAuthor("adskjb")
 //                .setName("aSADHASJ")
