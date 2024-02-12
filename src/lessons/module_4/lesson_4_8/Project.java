@@ -1,7 +1,6 @@
-package lessons.module_4.lessson_4_8;
+package lessons.module_4.lesson_4_8;
 
 import java.io.File;
-import java.nio.file.Path;
 import java.util.Scanner;
 
 public class Project {
