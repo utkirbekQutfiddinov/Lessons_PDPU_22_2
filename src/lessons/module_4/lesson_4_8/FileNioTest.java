@@ -1,9 +1,4 @@
-package lessons.module_4.lessson_4_8;
-
-import java.io.FileOutputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardCopyOption;
+package lessons.module_4.lesson_4_8;
 
 public class FileNioTest {
     public static void main(String[] args) throws Exception{
