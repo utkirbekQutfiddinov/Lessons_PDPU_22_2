@@ -1,6 +1,5 @@
-package lessons.module_5.lesson_4_9;
+package lessons.module_4.lesson_4_9_22_2;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
