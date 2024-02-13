@@ -1,4 +1,4 @@
-package lessons.module_4.lesson_4_9_22_2;
+package lessons.module_4.lesson_4_9;
 
 import java.io.IOException;
 import java.nio.file.Files;
