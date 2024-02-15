@@ -9,38 +9,103 @@ import java.util.regex.Pattern;
 
 public class RegExp {
     public static void main(String[] args) throws Exception{
-//        regexOldTest();
 
+
+
+        /** count
+         * X*: more than or equal to zero
+         * x+: 1+
+         * x?: 0,1
+         * x{n}: n
+         * x{n,}: at least n
+         * x{n,m}: from n to m
+         */
+
+        /** meta
+         * \d: digits
+         * \D: non-digit
+         * \w: word (a-zA-Z0-9_)
+         * \W: ^\w
+         * \s: space
+         * \S: non space
+         * \b: block
+         */
+
+        /** posix
+         * \p{Digit}: \d
+         * \p{Upper}: A-Z
+         *
+         *
+         */
+
+        /** classes
+         * [0-9]:
+         * [az]: a or z
+         * [^az]: not a nor z
+         * ^[az]:  start with a or z
+         * [az]$:  end with a or z
+         */
+
+
+        /* grouping types:
+         * 1) captured group: (pattern)
+         * 2) non-captured group: (?:pattern)
+         * 3) named group: (?<name>pattern)
+         * 4) Positive lookahead: (?=pattern)
+         * 5) negative lookahead: (?!pattern)
+         * 6) positive lookbehind: (?<=pattern)
+         * 7) negative lookbehind: (?<=pattern)
+         */
+
+
+    }
+
+    private static void namedGroup() {
         Scanner sc=new Scanner(System.in);
 
-//        Pattern p=Pattern.compile("(\\d{2})-(\\d{2})-(\\d{4})");
-//        Pattern p=Pattern.compile("(?:\\d{2})-(?:\\d{2})-(?:\\d{4})");
-//        Pattern p1=Pattern.compile("(?<year>\\d{4})-(?<day>\\d{2})-(?<month>\\d{2})");
-        Pattern p1=Pattern.compile("(?<div>\\w+</div>)");
-        String text=sc.nextLine();
-        Matcher matcher=p1.matcher(text);
 
+        Pattern p=Pattern.compile("(?<kun>\\d{2})-(?<oy>\\d{2})-(?<yil>\\d{4})");
 
-        while (matcher.find()){
-            System.out.println(matcher.group());
+        Matcher m=p.matcher(sc.next());
+
+        if(m.matches()){
+            System.out.println("Year: "+m.group("yil"));
+            System.out.println("Month: "+m.group("oy"));
+            System.out.println("Day: "+m.group("kun"));
+            System.out.println("Full: "+m.group(0));
         }
+    }
 
-//        int sum=0;
-//        System.out.println(matcher.group(1));
-//        while (matcher.find()) {
-//            sum+=Integer.parseInt(matcher.group());
-//        }
-//
-//
-//        System.out.println(sum);
-
-//        if(matcher.matches()){
-//            System.out.println(matcher.group(1));
-//            System.out.println(matcher.group(2));
-//            System.out.println(matcher.group(3));
-//        }
+    private static void nonCapturedGroup() {
+        Scanner sc=new Scanner(System.in);
 
 
+        Pattern p=Pattern.compile("(\\d{2})-(?:\\d{2})-(\\d{4})");
+
+        Matcher m=p.matcher(sc.next());
+
+        if(m.matches()){
+            System.out.println("Year: "+m.group(2));
+//            System.out.println("Month: "+m.group(2));
+            System.out.println("Day: "+m.group(1));
+            System.out.println("Full: "+m.group(0));
+        }
+    }
+
+    private static void capturedGroup() {
+        Scanner sc=new Scanner(System.in);
+
+
+        Pattern p=Pattern.compile("(\\d{2})-(\\d{2})-(\\d{4})");
+
+        Matcher m=p.matcher(sc.next());
+
+        if(m.matches()){
+            System.out.println("Year: "+m.group(3));
+            System.out.println("Month: "+m.group(2));
+            System.out.println("Day: "+m.group(1));
+            System.out.println("Full: "+m.group(0));
+        }
     }
 
     private static void regexOldTest() throws IOException {
