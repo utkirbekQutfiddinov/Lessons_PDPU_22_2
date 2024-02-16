@@ -1,6 +1,7 @@
 package lessons.module_4.lesson_4_5.review.aquarium;
 
 import java.util.*;
+import java.util.logging.Logger;
 
 public class Aquarium implements Runnable {
     private final List<Fish> fishlar = new ArrayList<>();
@@ -8,6 +9,7 @@ public class Aquarium implements Runnable {
     private final int MAX_SIZE = 500;
     private final int MIN_SIZE = 0;
     private final Random rand=SingletonRandom.getInstance();
+    private final Logger logger=Logger.getLogger("");
 
 
     @Override

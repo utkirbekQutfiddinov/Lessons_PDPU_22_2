@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-02-16T11:35:56.767926300Z</date>
+  <millis>1708083356767</millis>
+  <nanos>926300</nanos>
+  <sequence>0</sequence>
+  <logger></logger>
+  <level>SEVERE</level>
+  <class>lessons.module_4.lesson_4_10.LoggingApi</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>severe msg</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-02-16T11:38:15.845374800Z</date>
+  <millis>1708083495845</millis>
+  <nanos>374800</nanos>
+  <sequence>0</sequence>
+  <logger></logger>
+  <level>SEVERE</level>
+  <class>lessons.module_4.lesson_4_10.LoggingApi</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>severe msg</message>
+</record>
+</log>
