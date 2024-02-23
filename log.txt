@@ -1,6 +1,0 @@
-Feb 16, 2024 3:50:20 PM lessons.module_4.lesson_4_10.LoggingApi main
-WARNING: / by zero
-	[lessons.module_4.lesson_4_10.LoggingApi.main(LoggingApi.java:19)]
-Feb 16, 2024 3:50:34 PM lessons.module_4.lesson_4_10.LoggingApi main
-WARNING: / by zero
-	[lessons.module_4.lesson_4_10.LoggingApi.main(LoggingApi.java:19)]
